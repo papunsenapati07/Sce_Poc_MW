@@ -1068,3 +1068,117 @@ country                                           false     true      false
 2018-02-20 14:36:33,637 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
 2018-02-20 14:36:33,638 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [1] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
 2018-02-20 14:36:33,638 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'country' to {"country":"India","name":"Snow","id":2}
+2018-02-23 15:56:31,322 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [systemProperties] PropertySource with lowest search precedence
+2018-02-23 15:56:31,322 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-02-23 15:56:31,322 [main] DEBUG org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:126) - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/welcome],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tcs.spring.PersonController.listPersons(org.springframework.ui.Model)
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/emp],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.tcs.spring.model.Person> com.tcs.spring.PersonController.generateJsonResponse()
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/authenticates],methods=[POST || GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.tcs.spring.model.BaseResponse com.tcs.spring.PersonController.generateJsonResponse(com.tcs.spring.model.Users)
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/authenticate],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[application/json],custom=[]}" onto public org.springframework.http.ResponseEntity<com.tcs.spring.model.BaseResponse> com.tcs.spring.PersonController.generateJsonResponses(com.tcs.spring.model.Users)
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/test],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.tcs.spring.model.Person>> com.tcs.spring.PersonController.generateJsonResponses()
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/acknowledge],methods=[POST || GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.tcs.spring.model.BaseResponse com.tcs.spring.PersonController.acknowledgeUser(com.tcs.spring.model.AcknowledgeUser)
+2018-02-23 15:56:31,384 [main] INFO  org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:197) - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tcs.spring.PersonController.redirect(org.springframework.ui.Model)
+2018-02-23 15:56:31,697 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:621) - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@491cc5c9
+2018-02-23 15:56:31,744 [main] DEBUG org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:118) - Initializing servlet ''
+2018-02-23 15:56:31,744 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-02-23 15:56:31,744 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [systemProperties] PropertySource with lowest search precedence
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:110) - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:126) - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-02-23 15:56:31,761 [main] INFO  org.springframework.mock.web.MockServletContext.log(MockServletContext.java:390) - Initializing Spring FrameworkServlet ''
+2018-02-23 15:56:31,761 [main] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) - FrameworkServlet '': initialization started
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.initMultipartResolver(DispatcherServlet.java:483) - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.initLocaleResolver(DispatcherServlet.java:498) - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@53fe15ff]
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.initThemeResolver(DispatcherServlet.java:520) - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@1530c739]
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.initRequestToViewNameTranslator(DispatcherServlet.java:658) - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78e4deb0]
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.initFlashMapManager(DispatcherServlet.java:720) - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@7d0b7e3c]
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:558) - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-02-23 15:56:31,761 [main] INFO  org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) - FrameworkServlet '': initialization completed in 0 ms
+2018-02-23 15:56:31,761 [main] DEBUG org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:139) - Servlet '' configured successfully
+2018-02-23 15:56:31,791 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:838) - DispatcherServlet with name '' processing GET request for [/emp]
+2018-02-23 15:56:31,806 [main] DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:246) - Looking up handler method for path /emp
+2018-02-23 15:56:31,806 [main] DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:251) - Returning handler method [public java.util.List<com.tcs.spring.model.Person> com.tcs.spring.PersonController.generateJsonResponse()]
+2018-02-23 15:56:31,806 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925) - Last-Modified value for [/emp] is: -1
+2018-02-23 15:56:31,869 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:150) - Written [[ID: 1 Name: John Country: India, ID: 2 Name: Snow Country: India]] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@2bdd8394]
+2018-02-23 15:56:31,869 [main] DEBUG org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1012) - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+2018-02-23 15:56:31,869 [main] DEBUG org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:991) - Successfully completed request
+2018-02-23 15:56:31,884 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      true      false     
+
+2018-02-23 15:56:31,884 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $[0].id
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      false     false     
+[0]                                               false     false     true      
+id                                                false     true      false     
+
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [0] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'id' to {"country":"India","name":"John","id":1}
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $[0].name
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      false     false     
+[0]                                               false     false     true      
+name                                              false     true      false     
+
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [0] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'name' to {"country":"India","name":"John","id":1}
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $[0].country
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      false     false     
+[0]                                               false     false     true      
+country                                           false     true      false     
+
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [0] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'country' to {"country":"India","name":"John","id":1}
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $[1].id
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      false     false     
+[1]                                               false     false     true      
+id                                                false     true      false     
+
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [1] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'id' to {"country":"India","name":"Snow","id":2}
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $[1].name
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      false     false     
+[1]                                               false     false     true      
+name                                              false     true      false     
+
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [1] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'name' to {"country":"India","name":"Snow","id":2}
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.<init>(JsonPath.java:125) - New JsonPath:
+---------------------------------------------------------------------------
+PATH: $[1].country
+Fragment                                          Root      End       Array     
+---------------------------------------------------------------------------
+$                                                 true      false     false     
+[1]                                               false     false     true      
+country                                           false     true      false     
+
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: PassthroughFilter => '$' to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: ArrayIndexFilter => [1] to [{"country":"India","name":"John","id":1},{"country":"India","name":"Snow","id":2}]
+2018-02-23 15:56:31,900 [main] DEBUG com.jayway.jsonpath.JsonPath.read(JsonPath.java:252) - Applying filter: FieldFilter => 'country' to {"country":"India","name":"Snow","id":2}
