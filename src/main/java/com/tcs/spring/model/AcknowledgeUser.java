@@ -22,4 +22,5 @@ public class AcknowledgeUser {
 		this.datetime = datetime;
 	}
 
+	
 }
