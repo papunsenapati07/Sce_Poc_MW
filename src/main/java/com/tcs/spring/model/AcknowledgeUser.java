@@ -21,6 +21,5 @@ public class AcknowledgeUser {
 	public void setDatetime(String datetime) {
 		this.datetime = datetime;
 	}
-
 	
 }
