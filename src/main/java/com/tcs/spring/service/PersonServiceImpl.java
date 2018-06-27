@@ -55,7 +55,6 @@ public class PersonServiceImpl implements PersonService {
 
 	@Override
 	public boolean acknowledgeUser(String user, Date date) {
-		// TODO Auto-generated method stub
 		return this.personDAO.acknowledgeUser(user, date);
 	}
 
